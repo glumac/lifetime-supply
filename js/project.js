@@ -1,4 +1,4 @@
-// assign click event handler with jQuery
+// assign click event handler
 
 function calculateNumDrinks() {
   // assign variables
