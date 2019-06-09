@@ -3,13 +3,13 @@ document.querySelector('#click-me').onclick = calculateNumDrinks;
 
 function calculateNumDrinks () {
 	// assign variables
-	var currentAge = document.querySelector('#age').value;
-	var maxAge = document.querySelector('#max-age').value;
-	var favDrink = document.querySelector('#item').value;
-	var numPerDay = document.querySelector('#num-per-day').value;
+	let currentAge = document.querySelector('#age').value;
+	let maxAge = document.querySelector('#max-age').value;
+	let favDrink = document.querySelector('#item').value;
+	let numPerDay = document.querySelector('#num-per-day').value;
 
 	// calculate total
-	var total = (maxAge - currentAge) * 365 * numPerDay;
+	let total = (maxAge - currentAge) * 365 * numPerDay;
 
 	// output results
 	document.querySelector('#solution').innerHTML = total;
