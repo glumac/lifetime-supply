@@ -1,17 +1,17 @@
 // assign click event handler
-document.querySelector('#click-me').onclick = calculateNumDrinks;
+document.getElementById('click-me').onclick = calculateNumDrinks;
 
 function calculateNumDrinks () {
 	// assign variables
-	let currentAge = document.querySelector('#age').value;
-	let maxAge = document.querySelector('#max-age').value;
-	let favDrink = document.querySelector('#item').value;
-	let numPerDay = document.querySelector('#num-per-day').value;
+	let currentAge = document.getElementById('age').value;
+	let maxAge = document.getElementById('max-age').value;
+	let favDrink = document.getElementById('item').value;
+	let numPerDay = document.getElementById('num-per-day').value;
 
 	// calculate total
 	let total = (maxAge - currentAge) * 365 * numPerDay;
 
 	// output results
-	document.querySelector('#solution').innerHTML = total;
-	document.querySelector('#drink').innerHTML = favDrink;
+	document.getElementById('solution').innerHTML = total;
+	document.getElementById('drink').innerHTML = favDrink;
 }
